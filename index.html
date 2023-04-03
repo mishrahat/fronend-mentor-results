@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              lightRed: "hsl(0, 100%, 67%)",
+              orangeYellow: "hsl(39, 100%, 56%)",
+              greenTeal: "hsl(166, 100%, 37%)",
+              cobaltBlue: "hsl(234, 85%, 45%)",
+              lightSlateBlue: "hsl(252, 100%, 67%)",
+              lightRoyalBlue: "hsl(241, 81%, 54%)",
+              violetBlue: "hsla(256, 72%, 46%, 1)",
+              persianBlue: "hsla(241, 72%, 46%, 0)",
+              white: "hsl(0, 0%, 100%)",
+              paleBlue: "hsl(221, 100%, 96%)",
+              lightLavender: "hsl(241, 100%, 89%)",
+              DarkGrayBlue: "hsl(224, 30%, 27%)",
+            },
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+              hanken: ["Hanken Grotesk", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+    </style>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body
+    class="h-screen flex lg:items-center md:items-center text-[18px] font-hanken"
+  >
+    <div
+      class="flex-col items-center md:px-0 lg:px-0 md:flex-row lg:flex-row flex md:mx-auto lg:mx-auto max-w-[800px] h-[500px]"
+    >
+      <div
+        class="bg-lightSlateBlue z-10 rounded-b-[30px] lg:rounded-[30px] md:rounded-[30px] flex flex-col gap-5 justify-center items-center w-full md:w-1/2 lg:w-1/2 px-[70px] py-5"
+      >
+        <p class="text-lightLavender text-2xl mb-5">Your Result</p>
+        <div
+          class="bg-violetBlue flex flex-col items-center rounded-full w-[200px] overflow-hidden py-12 px-10 h-[200px]"
+        >
+          <h1 class="text-white font-bold text-7xl">76</h1>
+          <p class="text-lightLavender">of 100</p>
+        </div>
+        <h4 class="text-white text-3xl">Great</h4>
+        <p class="text-center text-lightLavender">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div
+        class="w-[400px] h-[470px] md:left-[945px] lg:left-[945px] pb-10 md:pb-0 lg:mb-0 pt-8 px-10 rounded-[30px] lg:absolute shadow-lg"
+      >
+        <p class="text-DarkGrayBlue font-bold text-left text-2xl pl-3 mb-5">
+          Summery
+        </p>
+        <div class="flex flex-col gap-4 px-3">
+          <div
+            class="flex bg-paleBlue rounded-[10px] py-4 px-7 justify-between items-center"
+          >
+            <div class="flex gap-1">
+              <img
+                class="w-[20px]"
+                src="assets/images/icon-reaction.svg"
+                alt=""
+              />
+              <p class="text-lightRed">Reaction</p>
+            </div>
+            <p class="text-lightLavender font-bold">
+              <span class="text-DarkGrayBlue font-bold">80</span> / 100
+            </p>
+          </div>
+          <div
+            class="flex bg-paleBlue rounded-[10px] py-4 px-7 justify-between items-center"
+          >
+            <div class="flex gap-1">
+              <img
+                class="w-[20px]"
+                src="assets/images/icon-memory.svg"
+                alt=""
+              />
+              <p class="text-orangeYellow">Memory</p>
+            </div>
+            <p class="text-lightLavender font-bold">
+              <span class="text-DarkGrayBlue font-bold">92</span> / 100
+            </p>
+          </div>
+          <div
+            class="flex bg-paleBlue rounded-[10px] py-4 px-7 justify-between items-center"
+          >
+            <div class="flex gap-1">
+              <img
+                class="w-[20px]"
+                src="assets/images/icon-verbal.svg"
+                alt=""
+              />
+              <p class="text-greenTeal">Verbal</p>
+            </div>
+            <p class="text-lightLavender font-bold">
+              <span class="text-DarkGrayBlue font-extrabold">61</span> / 100
+            </p>
+          </div>
+          <div
+            class="flex bg-paleBlue rounded-[10px] py-4 px-7 justify-between items-center"
+          >
+            <div class="flex gap-1">
+              <img
+                class="w-[20px]"
+                src="assets/images/icon-visual.svg"
+                alt=""
+              />
+              <p class="text-cobaltBlue">Visual</p>
+            </div>
+            <p class="text-lightLavender font-bold">
+              <span class="text-DarkGrayBlue font-bold">80</span> / 100
+            </p>
+          </div>
+          <a
+            class="bg-DarkGrayBlue text-white py-4 px-28 rounded-[30px] text-center mt-3"
+            href="#"
+            >Continue</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
